@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/48a273ac12.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <a role="button" class="link_button" rel="prev" href="#"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>&nbsp;go back</a>
+      <img src="img/target.png" alt="" />
+      <a role="button" class="link_button" href="#"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;sign in</a>
+    </header>
+    <main>
+      <div class="main_header">
+        <section class="order_info">
+          <h3><i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;your order</h3>
+          <dl class="description_list">
+            <div>
+              <dt>items</dt>
+              <dd>2 documents</dd>
+            </div>
+            <div>
+              <dt>details</dt>
+              <dd>2 languages</dd>
+            </div>
+            <div>
+              <dt>price</dt>
+              <dd>&#36;696.06</dd>
+            </div>
+            <div>
+              <dt>delivery</dt>
+              <dd>48 hours*</dd>
+            </div>
+            <div class="order_buttons">
+              <button type="button" class="order order_buttons_style" name="place_order">place order</button>
+              <button type="button" class="order_buttons_style" name="print_a_quote">print a quote</button>
+            </div>
+          </dl>
+        </section>
+        <section class="help_center">
+          <h3><i class="fa fa-life-ring" aria-hidden="true"></i> help center</h3>
+          <p>
+            If you need assistance while
+            placing your order, contact one
+            of our beloved Project Mananger by phone or email.
+          </p>
+          <p>
+            <a href="tel:+9710555555">+971 (0) 555 555</a>
+            <a href="mailto:nazartsyhanyuk@gmail.com">help@qtest.com</a>
+          </p>
+        </section>
+      </div>
+      <section class="radio">
+        <h1>select what you want to translate</h1><hr>
+                                        <div class="control-group">
+                                              <label class="control control--radio">
+                                              <input type="radio" name="radio" />
+                                              <div class="control__indicator">
+                                                  <img src="img/website.png" width="30%" alt="" />
+                                              </div>
+                                              </label>
+                                              <label class="control control--radio">
+                                              <input type="radio" name="radio" checked="checked"/>
+                                              <div class="control__indicator">
+                                                <img src="img/documents.png" width="30%" alt="" />
+                                              </div>
+                                              </label>
+                                              <label class="control control--radio">
+                                              <input type="radio" name="radio"/>
+                                              <div class="control__indicator">
+                                                <img src="img/social.png" width="30%" alt="" />
+                                              </div>
+                                              </label>
+                                        </div>
+      </section>
+      <section class="upload_documents">
+        <h2><span class="number">&nbsp;1&nbsp;</span> Upload your documents </h2>
+        <div class="upload_content">
+        <a role="button" class="link_button" type="file" href="#"><i class="fa fa-cloud-upload" aria-hidden="true"></i>&nbsp;Upload a new file</a>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>file name</th>
+              <th>file size</th>
+              <th>number of words</th>
+              <th>remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;buisness_operations.docx</td>
+              <td>78kb</td>
+              <td>842</td>
+              <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;buisness_financial.docx</td>
+              <td>26kb</td>
+              <td>2,326</td>
+              <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </section>
+        <section class="choose_languages">
+          <h2><span class="number">&nbsp;2&nbsp;</span>&nbsp;Choose your languages pairings</h2>
+        <div class="translation">
+          <div class="from_language">
+            <span>from&nbsp;</span>
+            <select class="form-control languages">
+                <option>english</option>
+                <option>arabic</option>
+                <option>kurdish</option>
+            </select>
+            </div>
+            <div class="to_language">
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;</span>
+              <select class="form-control languages">
+                  <option>arabic</option>
+                  <option>english</option>
+                  <option>kurdish</option>
+              </select>
+              <select class="form-control languages">
+                  <option>arabic</option>
+                  <option>english</option>
+                  <option selected>kurdish</option>
+              </select>
+              <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
+              <button type="button" name="button">+&nbsp;add</button>
+            </div>
+            </div>
+        </section>
+        <div class="multiple_block">
+        <section class="select_desired_tone">
+          <h2><span class="number">&nbsp;3&nbsp;</span>&nbsp;Select your desired tone</h2>
+
+                        <div class="control-group2">
+                              <label class="control2 control--radio2">
+                              <input type="radio" name="radio" />
+                              <div class="control__indicator2"><i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp;Friendly / Casual</div>
+                              </label>
+                              <label class="control2 control--radio2">
+                              <input type="radio" name="radio" checked="checked"/>
+                              <div class="control__indicator2">
+                                <i class="fa fa-suitcase" aria-hidden="true"></i>&nbsp;Corporate / Pro
+                              </div>
+                              </label>
+                              <label class="control2 control--radio2">
+                              <input type="radio" name="radio"/>
+                              <div class="control__indicator2">
+                                <i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;Media / Formal
+                              </div>
+                              </label>
+                        </div>
+
+        </section>
+        <section class="urgent_job">
+          <h2><span class="number">&nbsp;4&nbsp;</span>&nbsp;Tell us how urgent this job is</h2>
+          <input type="range" name="name" value="">
+          <blackquote>
+            <h3><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;TIMELINE INFO</h3>
+            <p>With an AVERAGE timeline set up, our expert translator can take <br> reasonable amount of time perfecting your translation.</p>
+          </blackquote>
+        </section>
+        </div>
+        <section class="payment">
+          <h2><span class="number">&nbsp;5&nbsp;</span>&nbsp;Sign up and choose a payment method</h2>
+          <div class="payment_data">
+          <p>Already have an account with us? <a href="">Sign in.</a></p>
+          <div class="users_data">
+            <div class="name_and_email">
+              <label for="name">full name</label>
+              <input type="text" class="form-control" id="name" name="name" value="" placeholder="enter name..." required>
+              <label for="email">email address</label>
+              <input type="email" class="form-control" id="email" name="email" value="" placeholder="enter email..." required>
+            </div>
+            <div class="password">
+              <label for="password">choose a password</label>
+              <input type="password" class="form-control" id="password" name="password" value="" placeholder="enter password..." required>
+            </div>
+          </div>
+          <div class="control-group3">
+                <label class="control3 control--radio3">
+                <input type="radio" name="radio" />
+                <div class="control__indicator3"><img src="img/visa_32.png" alt="" /><img src="img/mastercard.png" alt=""></div>
+                </label>
+                <label class="control3 control--radio3">
+                <input type="radio" name="radio" checked="checked"/>
+                <div class="control__indicator3">
+                  <img src="img/paypal.png" alt="" />
+                </div>
+                </label>
+                <label class="control3 control--radio3">
+                <input type="radio" name="radio"/>
+                <div class="control__indicator3">
+                  <img src="img/amazon.png" width="30%" alt="" />
+                </div>
+                </label>
+          </div>
+          <div class='card-wrapper'>
+              <form>
+                <div>
+                  <label for="card_number">card number</label>
+                  <input type="text" class="form-control" name="number" id="card_number">
+                </div>
+                <div>
+                  <label for="card_expiry">expiry date</label>
+                  <input type="text" class="form-control" name="expiry" id="card_expiry"/>
+                </div>
+                <div>
+                  <label for="card_cvc">code</label>
+                  <input type="text" class="form-control" name="cvc" id="card_cvc"/>
+                </div>
+
+              </form>
+          </div>
+        </section>
+        <div class="main_footer">
+            <input type="checkbox" id="terms" name="terms" value="" onchange="document.getElementById('submit').disabled = !this.checked;" required>
+            <label for="terms">I agree to the <a href="">Terms &amp; Conditions</a></label>
+            <button type="submit" id="submit" class="order order_buttons_style" name="button" disabled>place order</button>
+            <button type="button" class="order_buttons_style" name="button">print a quote</button>
+        </div>
+    </main>
+    <footer>
+      <section>
+        <h3><i class="fa fa-heart-o" aria-hidden="true"></i>&nbsp;what we do</h3>
+        <p>
+          We provide a full range of language services including content development, document, website and social media accounts translations.
+        </p>
+      </section>
+      <section>
+        <h3><i class="fa fa-compass" aria-hidden="true"></i>&nbsp;our main office</h3>
+        <p>Dubai, UAE</p>
+        <p>P.O. Box: 502735</p>
+        <p>Phone: +971 (0) 44278128</p>
+      </section>
+      <section>
+        <h3><i class="fa fa-share-alt" aria-hidden="true"></i>&nbsp;connect with us</h3>
+        <p><a href=""><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;Facebook</a></p>
+        <p><a href=""><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;Twitter</a></p>
+        <p><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp;Linkedin</a></p>
+      </section>
+      <section>
+        <img src="img/target.png" alt="" />
+      </section>
+    </footer>
+    <script src="js/card.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
